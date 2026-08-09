@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
 
 * {
 	box-sizing: border-box;
@@ -6,9 +6,9 @@
 	padding: 0;
 }
 html {
-	background: #dd9;
-	color: #440;
-	font-family: "Lora", serif;
+	background: #e8e09c;
+	color: #5e490a;
+	font-family: "Merriweather", serif;
 	font-optical-sizing: auto;
 	font-weight: 450;
 	font-style: normal;
@@ -21,8 +21,7 @@ img.letters {
 	display: block;
 	margin: 32px auto 0 auto;
 	border-radius: 20px;
-	border: #994 dotted 2px;
-	opacity: 55%;
+	border: #a3954a dotted 2px;
 }
 header {
 	margin-bottom: 24px;
@@ -41,12 +40,22 @@ nav.column {
 nav.column ol {
 	padding-left: 0;
 }
-ol {
+p, ul li {
+	margin-bottom: 12px;
+	line-height: 28px;
+}
+nav ol {
 	list-style-position: inside;
 }
+nav li {
+	line-height: 22px;
+}
+ul {
+	margin-left: 24px;
+}
 a.nav-link {
-	background: #994;
-	color: #dd9;
+	background: #a3954a;
+	color: #e8e09c;
 	margin: 32px 0 0 8px;
 	width:32px;
 	height:32px;
@@ -54,7 +63,6 @@ a.nav-link {
 	font-size: 24px;
 	display: inline-block;
 	text-align: center;
-	padding-top: 1px;
 }
 a.nav-link:nth-child(1) {
 	padding-right: 3px;
@@ -71,10 +79,10 @@ a.nav-link:nth-child(3) {
 	padding-left: 3px;
 }
 .number {
-	background: #994;
+	background: #a3954a;
 	color: #fff;
 	padding-top: 12px;
-	margin: 11px 8px 0 0;
+	margin: 11px 16px 0 0;
 	border-radius: 100%;
 	font-size: 20px;
 	width:50px;
@@ -93,8 +101,8 @@ a.nav-link:nth-child(3) {
 	font-size: 16px;
 	text-align: right;
 	margin-bottom: 24px;
-	line-height: 22px;
-	color: #760;
+	line-height: 24px;
+	color: #a17217;
 }
 article {
 	display: flex;
@@ -108,8 +116,10 @@ section.content {
 }
 h1 {
 	color: #fff;
-	text-shadow: #230 1px 1px 2px;
+	text-shadow: #000 1px 1px 2px;
 	font-size: 32px;
+	margin-bottom: 14px;
+	margin-left: -3px;
 }
 h2, h3, nav.column h3 {
 	color: #867726;
@@ -122,18 +132,15 @@ h2 {
 	margin-bottom: 0px;
 }
 h3.subsection {
-	color: #b27d00;
-	font-weight: 300;
+	color: #bc8504;
+	font-size: 16px;
+	font-weight: 400;
 	text-shadow: none;
-	background: #eeeea2;
+	background: #f2eda4;
 	display: inline-block;
-	padding: 2px 18px;
+	padding: 3px 18px;
 	border-radius: 16px;
 	margin-left: -18px;
-}
-p {
-	margin-bottom: 12px;
-	line-height: 22px;
 }
 a {
 	color: #870;
