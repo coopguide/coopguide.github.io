@@ -50,7 +50,7 @@ nav ol {
 nav li {
 	line-height: 22px;
 }
-ul {
+.content ul, .content ol {
 	margin-left: 24px;
 }
 a.nav-link {
