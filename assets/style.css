@@ -12,6 +12,7 @@ html {
 	font-optical-sizing: auto;
 	font-weight: 450;
 	font-style: normal;
+	scroll-behavior: smooth;
 }
 body {
 	padding: 8px 8px 48px 8px;
@@ -98,7 +99,6 @@ a.nav-link:nth-child(3) {
 .intro {
 	white-space: pre-wrap;
 	font-style: italic;
-	font-size: 16px;
 	text-align: right;
 	margin-bottom: 24px;
 	line-height: 24px;
@@ -150,6 +150,10 @@ a {
 a:hover {
 	border-bottom: #870 solid 1px;
 }
+section.content ol a, section.content ol a:hover {
+	border-bottom: none;
+	font-weight: normal;
+}
 section.content ol {
 	font-weight: 600;
 	margin-bottom: 16px;
@@ -161,4 +165,68 @@ section.content ol li ol {
 	font-weight: normal;
 	padding-left: 32px;
 	margin-bottom: 0;
+}
+sup.notes {
+	padding: 0 3px 0 3px;
+}
+sup.notes a {
+	font-weight: bold;
+	border-bottom: none;
+}
+aside.footnotes {
+	color: #999259;
+	border-left: 46px solid #c4bd81;
+	font-size: 14px;
+	padding: 0 0 6px 0;
+	margin: 0 0 8px -18px;
+}
+aside.footnotes p {
+	padding: 4px 16px 6px 16px;
+	line-height: 22px;
+	margin-bottom: 0;
+	scroll-margin-top: 25vh;
+}
+aside.footnotes > p:not(.spoiler):last-child {
+	padding-bottom: 0;
+}
+aside.footnotes p.a {
+	border-top: 6px dotted #839bd4;
+	border-bottom: 6px dotted #839bd4;
+	padding-top: 4px;
+}
+a.f, .footnotes p.f b:first-child {
+	color: #c04444;
+}
+a.a, .footnotes p.a b:first-child {
+	color: #44f;
+}
+p.spoiler {
+	height: 26px;
+	cursor: pointer;
+	overflow: hidden;
+}
+p.spoiler:not(.a) {
+	color: transparent;
+	background: linear-gradient(to right, #999259 0%, #999259 70%, #e8e09c 95%);
+	background-clip: text;
+	-webkit-background-clip: text;
+}
+p.a.spoiler span:first-child {
+	display: inline-block;
+	color: transparent;
+	background: linear-gradient(to right, #999259 0%, #999259 70%, #e8e09c 95%);
+	background-clip: text;
+	-webkit-background-clip: text;
+}
+p.a.spoiler {
+	height: 41px;
+}
+.spoiler .button {
+	display: block;
+	float: right;
+	font-weight: bold;
+}
+.spoiler .button:hover {
+	color: #6a6432;
+	cursor: pointer;
 }
