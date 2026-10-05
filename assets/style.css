@@ -5,6 +5,9 @@
 	margin: 0;
 	padding: 0;
 }
+:root {
+	interpolate-size: allow-keywords;
+}
 html {
 	background: #e8e09c;
 	color: #5e490a;
@@ -158,6 +161,9 @@ section.content ol {
 	font-weight: 600;
 	margin-bottom: 16px;
 }
+section.content ol.section-index {
+	margin-bottom: 64px;
+}
 section.content ol li {
 	line-height: 150%;
 }
@@ -200,6 +206,9 @@ a.f, .footnotes p.f b:first-child {
 a.a, .footnotes p.a b:first-child {
 	color: #44f;
 }
+.spoiler {
+	transition: height 500ms ease-in-out;
+}
 p.spoiler {
 	height: 26px;
 	cursor: pointer;
@@ -229,4 +238,10 @@ p.a.spoiler {
 .spoiler .button:hover {
 	color: #6a6432;
 	cursor: pointer;
+}
+@supports (-webkit-app-region: inherit) {
+	aside.footnotes p.a.spoiler {
+		padding-left: 10px !important;
+		margin-left: 6px !important;
+	}
 }
